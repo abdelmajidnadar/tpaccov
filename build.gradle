@@ -1,0 +1,25 @@
+
+sourceCompatibility = 1.8
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+apply plugin: 'java'
+apply plugin: 'netbeans'
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloWorld'
+
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+   
+    testCompile "junit:junit:4.12"
+}
